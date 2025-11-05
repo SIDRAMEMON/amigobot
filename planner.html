@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>AmigoBot — Daily Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <button type="button" onclick="toggleSidebar()">☰</button>
+    <h1>AmigoBot</h1>
+    <button type="button" onclick="toggleTheme()" class="theme-btn">🌙</button>
+  </nav>
+
+  <aside class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#chat">Chat</a></li>
+      <li><a href="planner.html">Daily Planner</a></li>
+    </ul>
+  </aside>
+
+  <main class="main-content" id="main-content">
+    <div class="planner-container">
+      <div class="planner-header">
+        <h2>Daily Planner</h2>
+        <p class="planner-sub">Add tasks, mark complete, and they will be saved in your browser.</p>
+      </div>
+
+      <div class="planner-card">
+        <form id="task-form">
+          <input id="task-input" type="text" placeholder="Add new task (e.g., Study OS notes)" autocomplete="off"/>
+          <button type="submit">Add</button>
+        </form>
+
+        <div class="planner-stats" id="planner-stats"></div>
+        <ul class="task-list" id="task-list"></ul>
+
+        <div class="planner-actions">
+          <button id="clear-completed" type="button">Clear Completed</button>
+          <button id="clear-all" type="button">Clear All</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Planner saved locally in your browser (localStorage).</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

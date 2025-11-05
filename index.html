@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AmigoBot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <nav class="navbar">
+    <button type="button" onclick="toggleSidebar()">☰</button>
+    <h1>AmigoBot</h1>
+    <button type="button" onclick="toggleTheme()" class="theme-btn">🌙</button>
+  </nav>
+
+
+  <aside class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#chat">Chat</a></li>
+      <li><a href="planner.html">Daily Planner</a></li>
+    </ul>
+  </aside>
+
+  
+  <main class="main-content" id="main-content">
+    <div class="chat-container" id="chat">
+      <div class="chat-header">
+        <h2>AmigoBot</h2>
+      </div>
+
+      
+      <div class="chat-box" id="chat-box" aria-live="polite">
+        <p class="message bot">Hello! It's AmigoBot here, your chat friend.</p>
+      </div>
+
+      
+      <div class="chat-input">
+        <input type="text" id="user-input" placeholder="Type a message..." autocomplete="off" />
+        <button type="button" onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </main>
+
+  
+  <footer class="footer">
+    <p>I am here for you friend ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>  
